@@ -1,4 +1,16 @@
 followme.fx
 ===========
 
-Sample afterburner.fx project
+A better name would be "cloneme.fx". Follow me is the simplest possible afterburner.fx
+application demonstrating:
+
+1. CSS and FXML integration
+2. Integration with the [afterburner.fx](https://github.com/AdamBien/afterburner.fx)
+3. Dependency Injection of models / services
+4. Maven 3 Build
+
+Builder and install afterburner.fx first:
+
+1. git clone https://github.com/AdamBien/afterburner.fx
+2. cd afterburner.fx
+3. mvn
