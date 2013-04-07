@@ -14,3 +14,9 @@ Builder and install afterburner.fx first:
 1. git clone https://github.com/AdamBien/afterburner.fx
 2. cd afterburner.fx
 3. mvn
+
+Then build followme.fx
+
+1. git clone https://github.com/AdamBien/followme.fx
+2. cd followme.fx
+3. mvn

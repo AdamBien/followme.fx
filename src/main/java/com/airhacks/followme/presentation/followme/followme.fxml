@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="180.0" prefHeight="192.0" prefWidth="525.0" styleClass="airpad" xmlns:fx="http://javafx.com/fxml" fx:controller="com.airhacks.followme.presentation.followme.FollowmePresenter">
+  <children>
+    <Label fx:id="message" layoutX="141.0" layoutY="51.0" prefHeight="39.0" prefWidth="347.0" text="A simplest possible afterburner.fx application" />
+    <Button fx:id="launch" layoutX="141.0" layoutY="134.0" mnemonicParsing="false" onAction="#launch" text="Launch" />
+  </children>
+</AnchorPane>
