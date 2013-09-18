@@ -19,7 +19,7 @@
         <dependency>
             <groupId>com.airhacks</groupId>
             <artifactId>afterburner.fx</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.1</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -55,7 +55,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>            
+            </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
@@ -78,7 +78,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>            
+            </plugin>
         </plugins>
         <resources>
             <resource>
@@ -94,8 +94,8 @@
                     <include>**/*.xml</include>
                 </includes>
             </resource>
-        </resources>       
-        <finalName>followme</finalName> 
+        </resources>
+        <finalName>followme</finalName>
     </build>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
