@@ -19,7 +19,7 @@
         <dependency>
             <groupId>com.airhacks</groupId>
             <artifactId>afterburner.fx</artifactId>
-            <version>1.1</version>
+            <version>1.4-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -68,7 +68,7 @@
                                 <argument>-outdir</argument>
                                 <argument>./target</argument>
                                 <argument>-outfile</argument>
-                                <argument>${project.name}-app</argument>
+                                <argument>${project.artifactId}-app</argument>
                                 <argument>-v</argument>
                             </arguments>
                         </configuration>
@@ -82,6 +82,7 @@
                 <includes>
                     <include>**/*.fxml</include>
                     <include>**/*.css</include>
+                    <include>**/*.properties</include>
                 </includes>
             </resource>
             <resource>
