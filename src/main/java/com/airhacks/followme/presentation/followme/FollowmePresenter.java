@@ -16,7 +16,10 @@ public class FollowmePresenter {
     @Inject
     Tower tower;
 
+    @Inject
+    private String prefix;
+
     public void launch() {
-        message.setText(tower.readyToTakeoff());
+        message.setText(prefix + tower.readyToTakeoff());
     }
 }
