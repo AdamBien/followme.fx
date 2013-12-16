@@ -9,16 +9,12 @@ application demonstrating:
 3. Dependency Injection of models / services
 4. Maven 3 Build
 
-Builder and install afterburner.fx first:
-
-1. git clone https://github.com/AdamBien/afterburner.fx
-2. cd afterburner.fx
-3. mvn
-
-Then build followme.fx
+How to use
 
 1. git clone https://github.com/AdamBien/followme.fx
 2. cd followme.fx
 3. mvn
+4. [JAVA_8_HOME]java -jar target/followme-app.jar
 
 See also: [http://afterburner.adam-bien.com](http://afterburner.adam-bien.com)
+and [https://github.com/AdamBien/igniter.fx](https://github.com/AdamBien/igniter.fx)
