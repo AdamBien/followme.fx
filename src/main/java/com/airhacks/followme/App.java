@@ -14,6 +14,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+        System.setProperty("happyEnding", " Enjoy the flight!");
         FollowmeView appView = new FollowmeView();
         Scene scene = new Scene(appView.getView());
         stage.setTitle("followme.fx");

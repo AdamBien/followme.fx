@@ -19,7 +19,10 @@ public class FollowmePresenter {
     @Inject
     private String prefix;
 
+    @Inject
+    private String happyEnding;
+
     public void launch() {
-        message.setText(prefix + tower.readyToTakeoff());
+        message.setText(prefix + tower.readyToTakeoff() + happyEnding);
     }
 }
