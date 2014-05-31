@@ -1,7 +1,11 @@
 package com.airhacks.followme;
 
-import com.airhacks.afterburner.injection.InjectionProvider;
+import com.airhacks.afterburner.injection.Injector;
 import com.airhacks.followme.presentation.followme.FollowmeView;
+import java.time.LocalDate;
+import java.time.Month;
+import java.util.HashMap;
+import java.util.Map;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -14,6 +18,18 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
+        /*
+         * Properties of any type can be easily injected.
+         */
+        LocalDate date = LocalDate.of(4242, Month.JULY, 21);
+        Map<Object, Object> customProperties = new HashMap<>();
+        customProperties.put("date", date);
+        /*
+         * any function which accepts an Object as key and returns
+         * and return an Object as result can be used as source.
+         */
+        Injector.setConfigurationSource(customProperties::get);
+
         System.setProperty("happyEnding", " Enjoy the flight!");
         FollowmeView appView = new FollowmeView();
         Scene scene = new Scene(appView.getView());
@@ -26,7 +42,7 @@ public class App extends Application {
 
     @Override
     public void stop() throws Exception {
-        InjectionProvider.forgetAll();
+        Injector.forgetAll();
     }
 
     public static void main(String[] args) {

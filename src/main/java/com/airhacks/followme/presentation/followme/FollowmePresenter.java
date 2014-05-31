@@ -2,6 +2,7 @@ package com.airhacks.followme.presentation.followme;
 
 import com.airhacks.followme.business.flightcontrol.boundary.Tower;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -25,6 +26,9 @@ public class FollowmePresenter implements Initializable {
     @Inject
     private String happyEnding;
 
+    @Inject
+    private LocalDate date;
+
     private String theVeryEnd;
 
     @Override
@@ -34,7 +38,8 @@ public class FollowmePresenter implements Initializable {
     }
 
     public void launch() {
-        message.setText(prefix + tower.readyToTakeoff() + happyEnding + theVeryEnd);
+        message.setText("Date: " + date + " -> " + prefix + tower.readyToTakeoff() + happyEnding + theVeryEnd
+        );
     }
 
 }
