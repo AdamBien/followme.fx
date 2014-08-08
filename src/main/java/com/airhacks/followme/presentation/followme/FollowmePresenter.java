@@ -1,12 +1,13 @@
 package com.airhacks.followme.presentation.followme;
 
-import com.airhacks.followme.business.flightcontrol.boundary.Tower;
+import com.airhacks.followme.presentation.followme.light.LightView;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.layout.Pane;
 import javax.inject.Inject;
 
 /**
@@ -17,6 +18,10 @@ public class FollowmePresenter implements Initializable {
 
     @FXML
     Label message;
+
+    @FXML
+    Pane lightsBox;
+
     @Inject
     Tower tower;
 
@@ -35,6 +40,14 @@ public class FollowmePresenter implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         //fetched from followme.properties
         this.theVeryEnd = rb.getString("theEnd");
+    }
+
+    public void createLights() {
+        for (int i = 0; i < 255; i++) {
+            final int red = i;
+            LightView view = new LightView((f) -> red);
+            view.getViewAsync(lightsBox.getChildren()::add);
+        }
     }
 
     public void launch() {

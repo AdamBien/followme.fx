@@ -1,4 +1,4 @@
-package com.airhacks.followme.business.flightcontrol.boundary;
+package com.airhacks.followme.presentation.followme;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
