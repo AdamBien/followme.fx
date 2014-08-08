@@ -1,4 +1,4 @@
-package com.airhacks.followme.presentation.followme.light;
+package com.airhacks.followme.dashboard.light;
 
 import com.airhacks.afterburner.views.FXMLView;
 import java.util.function.Function;

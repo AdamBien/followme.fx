@@ -1,7 +1,5 @@
-package com.airhacks.followme.presentation.followme;
+package com.airhacks.followme.dashboard;
 
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javax.annotation.PostConstruct;
 
 /**

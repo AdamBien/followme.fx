@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="180.0" prefHeight="259.0" prefWidth="525.0" styleClass="airpad" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.airhacks.followme.dashboard.DashboardPresenter">
+    <children>
+        <FlowPane fx:id="lightsBox" hgap="1.0" prefHeight="143.0" prefWidth="525.0" vgap="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <padding>
+                <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+            </padding>
+        </FlowPane>
+        <Label fx:id="message" layoutX="78.0" layoutY="148.0" prefHeight="39.0" prefWidth="347.0" text="A simplest possible afterburner.fx application" />
+        <Button fx:id="launch" layoutX="78.0" layoutY="206.0" mnemonicParsing="false" onAction="#launch" text="Launch" />
+        <Button layoutX="158.0" layoutY="206.0" mnemonicParsing="false" onAction="#createLights" text="Create 256 Views Asynchronously" />
+    </children>
+</AnchorPane>

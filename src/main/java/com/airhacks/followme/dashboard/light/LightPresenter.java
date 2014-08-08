@@ -1,4 +1,4 @@
-package com.airhacks.followme.presentation.followme.light;
+package com.airhacks.followme.dashboard.light;
 
 import java.net.URL;
 import java.util.ResourceBundle;

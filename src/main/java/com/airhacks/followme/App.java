@@ -1,7 +1,7 @@
 package com.airhacks.followme;
 
+import com.airhacks.followme.dashboard.DashboardView;
 import com.airhacks.afterburner.injection.Injector;
-import com.airhacks.followme.presentation.followme.FollowmeView;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.HashMap;
@@ -31,7 +31,7 @@ public class App extends Application {
         Injector.setConfigurationSource(customProperties::get);
 
         System.setProperty("happyEnding", " Enjoy the flight!");
-        FollowmeView appView = new FollowmeView();
+        DashboardView appView = new DashboardView();
         Scene scene = new Scene(appView.getView());
         stage.setTitle("followme.fx");
         final String uri = getClass().getResource("app.css").toExternalForm();

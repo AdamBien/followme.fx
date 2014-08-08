@@ -1,6 +1,6 @@
-package com.airhacks.followme.presentation.followme;
+package com.airhacks.followme.dashboard;
 
-import com.airhacks.followme.presentation.followme.light.LightView;
+import com.airhacks.followme.dashboard.light.LightView;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
@@ -14,7 +14,7 @@ import javax.inject.Inject;
  *
  * @author adam-bien.com
  */
-public class FollowmePresenter implements Initializable {
+public class DashboardPresenter implements Initializable {
 
     @FXML
     Label message;
