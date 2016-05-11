@@ -38,7 +38,7 @@ public class DashboardPresenter implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        //fetched from followme.properties
+        //fetched from dashboard.properties
         this.theVeryEnd = rb.getString("theEnd");
     }
 
